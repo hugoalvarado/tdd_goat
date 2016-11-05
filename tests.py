@@ -11,7 +11,7 @@ class NewVisitorTest(unittest.TestCase):
     def tearDown(self):
         self.browser.quit()
 
-    def test(self):
+    def skip_test(self):
         # The user Anne opens browser
         self.browser.get("http://localhost:8000")
 
