@@ -11,12 +11,12 @@ class NewVisitorTest(unittest.TestCase):
     def tearDown(self):
         self.browser.quit()
 
-    def skip_test(self):
+    def test(self):
         # The user Anne opens browser
         self.browser.get("http://localhost:8000")
 
         # The page title needs to mention the site http://decisionsdecisions.com/
-        self.assertIn('What should I do', self.browser.title)
+        self.assertIn('You tell me!', self.browser.title)
 
         self.fail("Finish this")
 
