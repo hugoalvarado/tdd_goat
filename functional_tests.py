@@ -21,16 +21,16 @@ class NewVisitorTest(unittest.TestCase):
         # There is a label in the page "Should I (do|wear|eat|buy|other) this or that?
 
         # The site shows a gui to enter 2 short 150 char phrases
-        inputbox1 = self.browser.find_element_by_id('id_new_item')
+        inputbox1 = self.browser.find_element_by_id('id_new_question1')
         self.assertEqual(
             inputbox1.get_attribute('placeholder'),
-            'Enter your first question'
+            'Enter your question'
         )
 
-        inputbox2 = self.browser.find_element_by_id('id_new_item')
+        inputbox2 = self.browser.find_element_by_id('id_new_question2')
         self.assertEqual(
             inputbox2.get_attribute('placeholder'),
-            'Enter your second question'
+            'Enter your question'
         )
 
         # User enters "buy a rolex" in the first box
